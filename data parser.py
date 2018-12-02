@@ -7,11 +7,8 @@ import time
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# read config for path data
-with open('config.json', 'r') as f:
-	data = json.load(f)
-	RIPS_FOLDER = data['RIPS_FOLDER']
-	CHARTS_FOLDER = data['CHARTS_FOLDER']
+RIPS_FOLDER = r'D:\Python\reddit\saved post ripper\rips'
+CHARTS_FOLDER = r'D:\Python\reddit\saved post ripper'
 
 def flatten_json():
 	all_files = os.listdir(RIPS_FOLDER)
