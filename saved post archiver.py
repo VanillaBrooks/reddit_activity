@@ -56,7 +56,7 @@ if __name__ == '__main__':
 	driver = webdriver.Chrome(chromedriver)
 	driver.get('https://old.reddit.com/login?dest=https%3A%2F%2Fold.reddit.com%2Fuser%2Fme%2Fsaved')
 
-	with open(r'D:\Python\reddit\saved post ripper\login_credentials.json', 'r') as f:
+	with open(r'D:\Python\reddit\saved post ripper\config.json', 'r') as f:
 		data = json.load(f)
 		username = data['username']
 		password = data['password']
@@ -86,7 +86,7 @@ if __name__ == '__main__':
 		print('\n\n')
 
 	date = datetime.datetime.now().strftime('%B_%d_%Y.%H-%M-%S') + '.json'
-	file_location = os.path.join(r'D:\Python\reddit\saved post ripper\rips'', date)
+	file_location = os.path.join(r'D:\Python\reddit\saved post ripper\rips', date)
 	print(file_location)
 
 
